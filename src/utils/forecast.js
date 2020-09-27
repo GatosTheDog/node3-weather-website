@@ -7,7 +7,7 @@ const forecast = (lat, long, callback) => {
     }else if (body.error) {
       callback('unabel to find location', undefined);
     } else {
-      callback(undefined, body.current.weather_descriptions[0] + ': The temperature is:' + body.current.temperature + ' Feels like:' + body.current.feelslike);
+      callback(undefined, body.current.weather_descriptions[0] + ': The temperature is:' + body.current.temperature + ' Feels like:' + body.current.feelslike + 'The humidity is: ' + body.current.humidity);
     }
   })
 }
