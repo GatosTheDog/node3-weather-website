@@ -1,7 +1,3 @@
-console.log('client side js file is loaded');
-
-
-
 const weather_form = document.querySelector('form');
 const search_element = document.querySelector('input');
 const messsage1 = document.querySelector('#messsage1')
@@ -23,7 +19,7 @@ weather_form.addEventListener('submit', (e) => {
       }else{
         messsage1.textContent = data.location;
         messsage2.textContent = data.forecast;
-        
+
       }
     })
   })
